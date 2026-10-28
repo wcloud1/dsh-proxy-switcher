@@ -1,0 +1,48 @@
+{
+  "name": "dsh-proxy-switcher",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Toggle the Harness host's outbound HTTP proxy between direct and a saved proxy profile from the Web GUI.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "proxy",
+    "http-proxy",
+    "web-ui"
+  ],
+  "type": "module",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.1-rc.3"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+# Bundle patch for dsh-proxy-switcher: inserts the plugin row into the profile
+# roster. The Host half owns the web routes and the proxy engine; the Client
+# half (declared by `dsh.client` in package.json) renders the switcher.
+- insert:
+    - id: dsh-proxy-switcher
+      name: dsh-proxy-switcher

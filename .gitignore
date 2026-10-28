@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Runtime / local state
+proxy-switcher.json
+*.log
+
+# Environment and secrets
+.env
+.env.*
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

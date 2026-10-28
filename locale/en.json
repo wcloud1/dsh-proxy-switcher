@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Proxy Switcher",
+    "description": "Toggle the Harness host's outbound HTTP proxy between direct and a default saved proxy profile; model requests and web fetches both use it."
+  }
+}
